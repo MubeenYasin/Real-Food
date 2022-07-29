@@ -1,3 +1,9 @@
+/* 
+color = #e67e22
+*/
+/* -------------------------------------- */
+/* BASIC CODE */
+/* -------------------------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -10,20 +16,14 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+/* -------------------------------------- */
+/* REUSEABLE COMPONENTS */
+/* -------------------------------------- */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
 }
-.hero-text-box{
-    position: absolute;
-    width: 805px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+/* ----------HEADINGS */
 h1{
     margin-top: 0;
     margin-bottom: 20px;
@@ -34,7 +34,7 @@ h1{
     word-spacing: 4px;
     text-transform: uppercase;
 }
-
+/* ---------BUTTONS */
 .btn:link,
 .btn:visited{
     display: inline-block;
@@ -59,4 +59,49 @@ h1{
 .btn:active{
     background-color: #bf6516;
     color: white;
+}
+/* -------------------------------------- */
+/*HEADER */
+/* -------------------------------------- */
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.hero-text-box{
+    position: absolute;
+    width: 805px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nave{
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+.main-nave li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nave li a:link,
+.main-nave li a:visited{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+.main-nave li a:active,
+.main-nave li a:hover{
+    border-bottom: 2px solid  #e67e22;
 }
